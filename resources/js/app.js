@@ -31,7 +31,6 @@ import * as bootstrap from 'bootstrap'
         setFrontThemeIcon(newThemeIcon);
     };
 
-
     // Добавление обработчика события
     document.querySelector('.change-theme').addEventListener('click', updateTheme);
 })();

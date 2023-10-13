@@ -1,17 +1,17 @@
 <header>
-    <nav class="navbar navbar-expand-lg" aria-label="Ninth navbar example">
+    <nav class="navbar navbar-expand-lg" aria-label="Navbar header">
         <div class="container">
             <a class="navbar-brand" href="{{ route('frontend.home') }}">{{ config('app.name') }}</a>
             <button class="navbar-toggler" type="button"
                     data-bs-toggle="collapse"
-                    data-bs-target="#navbarsExample07XL"
-                    aria-controls="navbarsExample07XL"
+                    data-bs-target="#navbarHeader"
+                    aria-controls="navbarHeader"
                     aria-expanded="false"
                     aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
 
-            <div class="collapse navbar-collapse" id="navbarsExample07XL">
+            <div class="collapse navbar-collapse" id="navbarHeader">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
                         <a class="nav-link active" aria-current="page" href="#">About</a>
