@@ -1,5 +1,5 @@
 <header>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark" aria-label="Ninth navbar example">
+    <nav class="navbar navbar-expand-lg" aria-label="Ninth navbar example">
         <div class="container">
             <a class="navbar-brand" href="{{ route('frontend.home') }}">{{ config('app.name') }}</a>
             <button class="navbar-toggler" type="button"
@@ -49,6 +49,13 @@
                             </ul>
                         </li>
                     @endguest
+                    <li class="nav-item">
+                        <a class="change-theme nav-link" href="#">
+                            <svg class="bi" fill="currentColor" width="16" height="16">
+                                <use id="themeIcon" xlink:href="#icoSunFill"></use>
+                            </svg>
+                        </a>
+                    </li>
                 </ul>
             </div>
         </div>
