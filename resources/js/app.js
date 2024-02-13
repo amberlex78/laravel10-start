@@ -33,4 +33,8 @@ import * as bootstrap from 'bootstrap'
 
     // Добавление обработчика события
     document.querySelector('.change-theme').addEventListener('click', updateTheme);
+
+    // Делаем содержимое видимым
+    document.documentElement.classList.remove('hidden-content');
+
 })();
