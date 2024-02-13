@@ -24,6 +24,7 @@ services:
         depends_on:
             - mysql
             - mailpit
+
     mysql:
         image: 'mysql/mysql-server:8.0'
         ports:
@@ -48,6 +49,20 @@ services:
                 - '-p${DB_PASSWORD}'
             retries: 3
             timeout: 5s
+
+    adminer:
+        image: adminer
+        ports:
+            - 8080:8080
+        environment:
+            ADMINER_DEFAULT_SERVER: mysql
+        depends_on:
+            - mysql
+        volumes:
+            - ./public/css/adminer.css:/var/www/html/adminer.css
+        networks:
+            - sail
+
     mailpit:
         image: 'axllent/mailpit:latest'
         ports:
@@ -55,6 +70,7 @@ services:
             - '${FORWARD_MAILPIT_DASHBOARD_PORT:-8025}:8025'
         networks:
             - sail
+
 networks:
     sail:
         driver: bridge
