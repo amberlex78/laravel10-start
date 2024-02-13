@@ -9,10 +9,6 @@ use Illuminate\Contracts\View\View;
 
 class HomeController extends FrontendController
 {
-
-    /**
-     * @return View|\Illuminate\Foundation\Application|Factory|Application
-     */
     public function index(): View|\Illuminate\Foundation\Application|Factory|Application
     {
 
